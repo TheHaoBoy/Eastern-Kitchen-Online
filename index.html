@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastern Kitchen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+            </div>
+            <h1>Eastern Kitchen</h1>
+            <p class="tagline">Chinese Meals to Takeaway</p>
+        </div>
+    </header>
+
+    <!-- Allergy Notice -->
+    <section id="about">
+        <div class="container">
+            <h2>Allergy Notice</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Some of our dishes contain CELERY, CEREALS CONTAINING GLUTEN, CRUSTACEANS, EGG, FISH, LUPIN, MILK,
+                        MOLLUSCS, MUSTARD, NUTS, PEANUTS, SESAME SEEDS, SOYA, SULPHUR DIOXIDE which some people may have a reaction to.
+                    </p>
+                    <p> 
+                        Please inform our staff before ordering if you suffer from any food allergies. We will do our best to advise you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="starters">Starter</button>
+                <button class="category-btn" data-category="spare-ribs">Spare Ribs</button>
+                <button class="category-btn" data-category="curry">Curry</button>
+                <button class="category-btn" data-category="roast-duck">Roast Duck</button>
+                <button class="category-btn" data-category="chicken">Chicken</button>
+                <button class="category-btn" data-category="mixed-dishes">Mixed</button>
+                <button class="category-btn" data-category="foo-yung">Foo Yung</button>
+                <button class="category-btn" data-category="chow-mein">Chow Mein</button>
+                <button class="category-btn" data-category="king-prawn">King Prawn</button>
+                <button class="category-btn" data-category="fried-rice">Fried Rice</button>
+                <button class="category-btn" data-category="beef">Beef</button>
+                <button class="category-btn" data-category="sweet-sour">Sweet & Sour</button>
+                <button class="category-btn" data-category="english-dishes">English Dishes</button>
+                <button class="category-btn" data-category="crispy-chicken-beef">Crispy Chicken & Beef</button>
+                <button class="category-btn" data-category="roast-pork">Roast Pork</button>
+                <button class="category-btn" data-category="specials">Special</button>
+
+                <button class="category-btn" data-category="garlic-">Garlic & Chilli</button>
+                <button class="category-btn" data-category="desserts">Extra Side</button>
+                <button class="category-btn" data-category="desserts">Drinks</button>
+                <button class="category-btn" data-category="desserts">Special Set Dinners</button>
+            </div>
+            <div class="menu-items" id="menuItemsContainer">
+                <!-- Menu items will be loaded here dynamically -->
+                <div class="loading">Loading menu...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div> 
+                                <p><a href="https://share.google/rw7vXYjuUNLZgaCBE">110 Swansea Road, Waunarlwydd, Swansea, SA5 4SS</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>01792 974 193</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="opening-hours">
+                        <h3>Opening Hours</h3>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Sunday</td>
+                                <td>17:00 - 22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday & Tuesday</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday - Saturday</td>
+                                <td>16:30 - 22:30</td>
+                            </tr>
+                            <tr>
+                                <td>Bank Holiday Monday</td>
+                                <td>17:00 - 22:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-dragon"></i>
+            </div>
+            <h3>Eastern Kitchen</h3>
+            <p>Chinese Meals to Take Away</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

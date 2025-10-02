@@ -1,0 +1,945 @@
+[
+    {
+      "category": "starters",
+      "name": "Chicken & Sweetcorn Soup",
+      "price": "£3.00",
+      "description": "Contains Eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "starters",
+      "name": "Chicken & Noodle Soup",
+      "price": "£3.00",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Chicken & Mushroom Soup",
+      "price": "£3.00",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Aromatic Crispy Duck with Pancakes",
+      "price": "(¼) £11.40 (½) £20.50",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Chicken on Skewers with Satay Sauce (4)",
+      "price": "£6.90",
+      "description": "Sauce contains peanuts",
+      "allergens": ["peanuts"]
+    },
+    {
+      "category": "starters",
+      "name": "Sesame Prawn on Toast",
+      "price": "£6.50",
+      "description": "Contains king prawns",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "starters",
+      "name": "Mini Vegetable Spring Rolls (10)",
+      "price": "£3.50",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Samosas (10)",
+      "price": "£3.50",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Crispy Seaweed",
+      "price": "£5.20",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Spring Roll (1)",
+      "price": "£3.20",
+      "description": ""
+    },
+    {
+      "category": "starters",
+      "name": "Salt & Pepper Chicken Wings",
+      "price": "£6.90",
+      "description": ""
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Salt & Pepper Spare Ribs",
+      "price": "£6.70",
+      "description": "Contains starch",
+      "allergens": ["starch"]
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Spare Ribs in Peking Sauce",
+      "price": "£7.50",
+      "description": "Contains tomato, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Spare Ribs in Chilli Sauce",
+      "price": "£7.50",
+      "description": "Contains tomato, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Spare Ribs in BBQ Sauce",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Spare Ribs in Capital Sauce",
+      "price": "£7.50",
+      "description": "Contains tomato, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Spare Ribs in Sweet & Sour Sauce",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "spare-ribs",
+      "name": "Spare Ribs in Honey Sauce",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "House Special Curry",
+      "price": "£7.00",
+      "description": "Contains king prawns",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "curry",
+      "name": "Special Curry",
+      "price": "£6.40",
+      "description": "Contains shrimps",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "curry",
+      "name": "King Prawn Curry",
+      "price": "£7.00",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "curry",
+      "name": "Roast Duck Curry",
+      "price": "£6.60",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Chicken Curry",
+      "price": "£5.90",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Roast Chicken Curry",
+      "price": "£6.20",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Beef Curry",
+      "price": "£6.20",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Roast Pork Curry",
+      "price": "£6.20",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Shrimp Curry",
+      "price": "£6.20",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "curry",
+      "name": "Mixed Meat Curry",
+      "price": "£6.40",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Mixed Vegetable Curry",
+      "price": "£5.50",
+      "description": ""
+    },
+    {
+      "category": "curry",
+      "name": "Mushroom Curry",
+      "price": "£5.50",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck in Plum Sauce",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck with Ginger & Spring Onion",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck with Mushrooms",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck with Pineapple",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck in Satay Sauce",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck with Bamboo Shoots",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck with Green Pepper in Black Bean Sauce",
+      "price": "£7.70",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck in Oyster Sauce",
+      "price": "£7.70",
+      "description": ""
+    },
+    {
+      "category": "roast-duck",
+      "name": "Roast Duck in Kung Po Sauce",
+      "price": "£7.70",
+      "description": "Sauce contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken in Spicy Tomato Sauce",
+      "price": "£7.20",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Beansprouts",
+      "price": "£7.20",
+      "description": "With gravy"
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken in Spicy Szechuan Sauce",
+      "price": "£7.20",
+      "description": "Contains vegetables",
+      "spicy": true
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Mushrooms",
+      "price": "£7.20",
+      "description": ""
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Pineapple",
+      "price": "£7.20",
+      "description": ""
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken Chop Suey",
+      "price": "£7.20",
+      "description": ""
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Bamboo Shoots & Water Chestnuts",
+      "price": "£7.20",
+      "description": "Contains cashew nuts",
+      "allergens": ["nuts"]
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Vegetables in Spicy Black Bean Sauce",
+      "price": "£7.20",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken in Oyster Sauce",
+      "price": "£7.20",
+      "description": ""
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken in Satay Sauce",
+      "price": "£7.20",
+      "description": "Contains peanuts, garlic, prawns, chilli powder, preservative, sodium benzoate",
+      "allergens": ["peanuts", "prawns"]
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken in Black Bean Sauce",
+      "price": "£7.20",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken in Kung Po Sauce",
+      "price": "£7.20",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Ginger & Spring Onion",
+      "price": "£7.20",
+      "description": ""
+    },
+    {
+      "category": "chicken",
+      "name": "Chicken with Cashew Nuts",
+      "price": "£7.40",
+      "description": "",
+      "allergens": ["nuts"]
+    },
+    {
+      "category": "mixed-dishes",
+      "name": "House Special Chop Suey",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "mixed-dishes",
+      "name": "Mixed Meat in Satay Sauce",
+      "price": "£7.50",
+      "description": "Contains peanuts, garlic, prawns, chilli powder, preservative, sodium benzoate",
+      "allergens": ["peanuts", "prawns"]
+    },
+    {
+      "category": "mixed-dishes",
+      "name": "Mixed Meat with Ginger & Spring Onion",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "mixed-dishes",
+      "name": "Mixed Meat with Onion in BBQ Sauce",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "mixed-dishes",
+      "name": "Mixed Meat in Black Bean Sauce",
+      "price": "£7.50",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "mixed-dishes",
+      "name": "House Special with Ginger & Spring Onion",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "foo-yung",
+      "name": "Chicken Foo Yung",
+      "price": "£6.50",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "foo-yung",
+      "name": "Plain Foo Yung",
+      "price": "£5.90",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "foo-yung",
+      "name": "Roast Pork Foo Yung",
+      "price": "£6.80",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "foo-yung",
+      "name": "King Prawn Foo Yung",
+      "price": "£7.60",
+      "description": "Contains eggs",
+      "allergens": ["eggs", "prawns"]
+    },
+    {
+      "category": "foo-yung",
+      "name": "Special Foo Yung",
+      "price": "£7.00",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "foo-yung",
+      "name": "Mushroom Foo Yung",
+      "price": "£6.50",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "chow-mein",
+      "name": "Mixed Meat Chow Mein",
+      "price": "£7.40",
+      "description": "Soft noodles"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Special Chow Mein",
+      "price": "£7.20",
+      "description": "Soft noodles"
+    },
+    {
+      "category": "chow-mein",
+      "name": "King Prawn Chow Mein",
+      "price": "£7.50",
+      "description": "Soft noodles",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "chow-mein",
+      "name": "Chicken with Garlic & Chilli Chow Mein",
+      "price": "£7.20",
+      "description": "Soft noodles",
+      "spicy": true
+    },
+    {
+      "category": "chow-mein",
+      "name": "Chicken Chow Mein",
+      "price": "£7.00",
+      "description": "Soft noodles, shredded chicken"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Roast Chicken Breast Chow Mein",
+      "price": "£7.40",
+      "description": "Soft noodles, with gravy"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Beef Chow Mein",
+      "price": "£7.00",
+      "description": "Soft noodles"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Roast Pork Chow Mein",
+      "price": "£7.00",
+      "description": "Soft noodles"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Roast Pork & Chicken Chow Mein",
+      "price": "£7.20",
+      "description": "Soft noodles"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Singapore Chow Mein",
+      "price": "£7.20",
+      "description": "Soft noodles, contains vegetable oil, coriander, tamarind, fennel, turmeric, ginger powder, garlic powder, spices consist of mustard seed, acetic acid, citric acid & lactic acid"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Vegetable Chow Mein",
+      "price": "£7.00",
+      "description": "Soft noodles"
+    },
+    {
+      "category": "chow-mein",
+      "name": "Mushroom Chow Mein",
+      "price": "£7.00",
+      "description": "Soft noodles, with gravy"
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn in Satay Sauce",
+      "price": "£7.50",
+      "description": "Contains peanuts, garlic, prawns, chilli powder, preservative, sodium benzoate",
+      "allergens": ["peanuts", "prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn with Mushrooms",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn with Ginger & Spring Onion",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "Szechuan King Prawn",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn with Pineapple",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn Chop Suey",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn with Mixed Vegetables",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn with Bamboo Shoots & Water Chestnuts",
+      "price": "£7.50",
+      "description": "Contains cashew nuts",
+      "allergens": ["prawns", "nuts"]
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn in Black Bean Sauce",
+      "price": "£7.50",
+      "description": "Contains chilli",
+      "allergens": ["prawns"],
+      "spicy": true
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn in Kung Po Sauce",
+      "price": "£7.50",
+      "description": "Contains chilli",
+      "allergens": ["prawns"],
+      "spicy": true
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn in Spicy Tomato Sauce",
+      "price": "£7.50",
+      "description": "Contains chilli",
+      "allergens": ["prawns"],
+      "spicy": true
+    },
+    {
+      "category": "king-prawn",
+      "name": "King Prawn with Cashew Nuts",
+      "price": "£7.70",
+      "description": "Contains cashew nuts",
+      "allergens": ["prawns", "nuts"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Singapore Fried Rice",
+      "price": "£7.10",
+      "description": "Spicy, contains eggs, vegetable oil, coriander, tamarind, fennel, turmeric, ginger powder, garlic powder, spices consist of mustard seed, acetic acid, citric acid & lactic acid",
+      "allergens": ["eggs"],
+      "spicy": true
+    },
+    {
+      "category": "fried-rice",
+      "name": "Special Fried Rice",
+      "price": "£7.10",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "King Prawn Fried Rice",
+      "price": "£7.60",
+      "description": "Contains eggs",
+      "allergens": ["eggs", "prawns"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Chicken with Garlic & Chilli Fried Rice",
+      "price": "£7.00",
+      "description": "Contains eggs",
+      "allergens": ["eggs"],
+      "spicy": true
+    },
+    {
+      "category": "fried-rice",
+      "name": "Chicken Fried Rice",
+      "price": "£6.80",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Roast Pork Fried Rice",
+      "price": "£6.90",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Beef Fried Rice",
+      "price": "£6.90",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Roast Pork & Chicken Fried Rice",
+      "price": "£7.10",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Vegetable Fried Rice",
+      "price": "£6.50",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Mixed Meat Fried Rice",
+      "price": "£7.20",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "fried-rice",
+      "name": "Mushroom Fried Rice",
+      "price": "£6.70",
+      "description": "With gravy, contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Mushrooms",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef in Satay Sauce",
+      "price": "£7.30",
+      "description": "Contains peanuts, garlic, prawns, chilli powder, preservative, sodium benzoate",
+      "allergens": ["peanuts", "prawns"]
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Mixed Vegetables",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef in Black Bean Sauce",
+      "price": "£7.30",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Bamboo Shoots & Water Chestnuts",
+      "price": "£7.30",
+      "description": "Contains cashew nuts",
+      "allergens": ["nuts"]
+    },
+    {
+      "category": "beef",
+      "name": "Beef in Oyster Sauce",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Ginger & Spring Onion",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef in Spicy Tomato Sauce",
+      "price": "£7.30",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Beansprouts",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Onion in Gravy",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef in Kung Po Sauce",
+      "price": "£7.30",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Pineapple",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "beef",
+      "name": "Beef with Cashew Nuts",
+      "price": "£7.50",
+      "description": "Contains cashew nuts",
+      "allergens": ["nuts"]
+    },
+    {
+      "category": "sweet-sour",
+      "name": "Sweet & Sour Chicken Balls (9)",
+      "price": "£7.00",
+      "description": ""
+    },
+    {
+      "category": "sweet-sour",
+      "name": "Sweet & Sour King Prawn Balls (10)",
+      "price": "£7.60",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "sweet-sour",
+      "name": "Sweet & Sour Chicken Hong Kong Style",
+      "price": "£7.10",
+      "description": ""
+    },
+    {
+      "category": "sweet-sour",
+      "name": "Salt & Pepper Chicken",
+      "price": "£7.10",
+      "description": ""
+    },
+    {
+      "category": "sweet-sour",
+      "name": "Sweet & Sour Vegetables",
+      "price": "£5.70",
+      "description": ""
+    },
+    {
+      "category": "english-dishes",
+      "name": "King Prawn Omelette",
+      "price": "£7.50",
+      "description": "Contains eggs",
+      "allergens": ["eggs", "prawns"]
+    },
+    {
+      "category": "english-dishes",
+      "name": "Chicken Omelette",
+      "price": "£6.20",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "english-dishes",
+      "name": "Mushroom Omelette",
+      "price": "£6.10",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "english-dishes",
+      "name": "Vegetable Omelette",
+      "price": "£5.90",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "english-dishes",
+      "name": "Onion & Pea Omelette",
+      "price": "£5.90",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "english-dishes",
+      "name": "Chicken & Pork with Onion in Gravy",
+      "price": "£6.90",
+      "description": ""
+    },
+    {
+      "category": "english-dishes",
+      "name": "Chicken with Gravy",
+      "price": "£6.60",
+      "description": ""
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Chicken in Peking Sauce",
+      "price": "£7.30",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Chicken in Lemon Sauce",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Chicken in Spicy Sauce",
+      "price": "£7.30",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Chicken in BBQ Sauce",
+      "price": "£7.30",
+      "description": "No vegetables"
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Chicken in Capital Sauce",
+      "price": "£7.30",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Beef in Sweet & Sour Sauce",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Beef in Peking Sauce",
+      "price": "£7.50",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Beef in Spicy Sauce",
+      "price": "£7.50",
+      "description": ""
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Beef in BBQ Sauce",
+      "price": "£7.50",
+      "description": "No vegetables"
+    },
+    {
+      "category": "crispy-chicken-beef",
+      "name": "Crispy Beef in Capital Sauce",
+      "price": "£7.50",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "roast-pork",
+      "name": "Roast Pork in Black Bean Sauce",
+      "price": "£7.30",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "roast-pork",
+      "name": "Roast Pork in Kung Po Sauce",
+      "price": "£7.30",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "roast-pork",
+      "name": "Roast Pork in Satay Sauce",
+      "price": "£7.30",
+      "description": "Contains peanuts, garlic, prawns, chilli powder, preservative, sodium benzoate",
+      "allergens": ["peanuts", "prawns"]
+    },
+    {
+      "category": "roast-pork",
+      "name": "Roast Pork with Mushrooms",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "roast-pork",
+      "name": "Roast Pork with Beansprouts",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "roast-pork",
+      "name": "Roast Pork with Ginger & Spring Onion",
+      "price": "£7.30",
+      "description": ""
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice, Chips & Curry Sauce",
+      "price": "£5.20",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice, Chips & BBQ Sauce",
+      "price": "£5.20",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice & Curry Sauce",
+      "price": "£5.00",
+      "description": "All in one tray"
+    }
+  ]
