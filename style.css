@@ -62,6 +62,74 @@ header h1 {
     color: var(--light);
 }
 
+/* Header Info Styles */
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.info-item i {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.info-item span {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-info {
+        max-width: 90%;
+    }
+    
+    .info-item {
+        padding: 10px 15px;
+    }
+    
+    .info-item span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-info {
+        gap: 8px;
+    }
+    
+    .info-item {
+        padding: 8px 12px;
+    }
+    
+    .info-item span {
+        font-size: 0.85rem;
+    }
+    
+    .info-item i {
+        font-size: 1rem;
+    }
+}
+
 h2 {
     font-size: 2.2rem;
     text-align: center;
@@ -99,6 +167,20 @@ p {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+}
+
+.header-btns {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: 20px auto 0 auto;
+}
+
+.header-btns .btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .btn:hover {
