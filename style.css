@@ -170,6 +170,111 @@ header {
     min-width: 300px;
 }
 
+/* Special Offers Section */
+#offers {
+    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+    border-top: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--secondary);
+}
+
+.offers-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offer-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.offer-icon i {
+    font-size: 1.5rem;
+}
+
+.offer-details h3 {
+    color: var(--dark);
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+.offer-condition {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.offer-notice {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px dashed var(--primary);
+}
+
+.offer-notice p {
+    margin: 0;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.offer-notice i {
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+/* Responsive Design for Offers */
+@media (max-width: 768px) {
+    .offer-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .offer-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .offer-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    .offer-condition {
+        font-size: 1rem;
+    }
+    
+    .offer-notice p {
+        font-size: 1rem;
+    }
+}
+
 /* Menu Section */
 #menu {
     background-color: #f9f9f9;
