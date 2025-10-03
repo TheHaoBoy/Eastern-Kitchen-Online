@@ -201,10 +201,92 @@ function startFireworks() {
     }, 30000);
 }
 
+// Interactive Click-to-Spawn Lanterns
+function setupInteractiveLanterns() {
+    const container = document.getElementById('interactive-lanterns');
+    if (!container) return;
+    
+    // Click event listener for the entire document
+    document.addEventListener('click', function(event) {
+        createLanternAtPosition(event.clientX, event.clientY);
+    });
+    
+    console.log('Interactive lanterns ready - click anywhere to spawn lanterns!');
+}
+
+function createLanternAtPosition(x, y) {
+    const container = document.getElementById('interactive-lanterns');
+    const lantern = document.createElement('div');
+    lantern.className = 'interactive-lantern';
+    
+    // Random lantern color variations
+    const colors = [
+        'linear-gradient(45deg, #c62828, #e53935)', // Red
+        'linear-gradient(45deg, #f57c00, #ff9800)', // Orange
+        'linear-gradient(45deg, #f44336, #e57373)', // Light Red
+        'linear-gradient(45deg, #d32f2f, #f44336)'  // Dark Red
+    ];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    
+    // Random size variation
+    const size = 0.7 + Math.random() * 0.6; // 0.7 to 1.3
+    
+    // Create lantern structure
+    const lanternHTML = `
+        <div class="lantern-body" style="background: ${randomColor}; transform: scale(${size})"></div>
+        <div class="lantern-top"></div>
+        <div class="lantern-bottom"></div>
+        <div class="lantern-tassel"></div>
+        <div class="lantern-glow"></div>
+    `;
+    
+    lantern.innerHTML = lanternHTML;
+    
+    // Position at click location
+    lantern.style.left = (x - 20) + 'px';
+    lantern.style.top = (y - 30) + 'px';
+    
+    // Random horizontal drift
+    const drift = -30 + Math.random() * 60; // -30px to +30px
+    lantern.style.setProperty('--drift', drift + 'px');
+    
+    // Random animation duration
+    const duration = 6 + Math.random() * 4; // 6-10 seconds
+    lantern.style.animationDuration = duration + 's';
+    
+    // Add custom animation for horizontal drift
+    lantern.style.animation = `floatUpAndFade ${duration}s ease-out forwards, driftHorizontal ${duration}s ease-in-out forwards`;
+    
+    // Add to container
+    container.appendChild(lantern);
+    
+    // Remove element after animation completes
+    setTimeout(() => {
+        if (lantern.parentNode) {
+            lantern.parentNode.removeChild(lantern);
+        }
+    }, duration * 1000);
+    
+    // Add CSS for horizontal drift
+    if (!document.getElementById('lantern-drift-style')) {
+        const style = document.createElement('style');
+        style.id = 'lantern-drift-style';
+        style.textContent = `
+            @keyframes driftHorizontal {
+                0% { transform: translateX(0) translateY(0) scale(0.8); }
+                100% { transform: translateX(var(--drift, 0px)) translateY(-100vh) scale(1.2); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, initializing menu...');
+    console.log('DOM loaded, initialising menu...');
+
     loadMenu();
+    setupInteractiveLanterns();
     
     // Check if it's Wednesday and start fireworks
     if (isWednesday()) {

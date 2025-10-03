@@ -191,7 +191,7 @@ p {
 
 /* Header Styles */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header_img.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/header_img.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -429,7 +429,107 @@ header {
 
 /* Menu Section */
 #menu {
-    background-color: #f9f9f9;
+    background-color: white;
+    position: relative;
+    overflow: hidden; /* Contain the lanterns within menu section */
+    min-height: 100vh; /* Ensure menu has height */
+}
+
+/* Interactive Lanterns */
+#interactive-lanterns {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.interactive-lantern {
+    position: absolute;
+    pointer-events: none;
+    animation: floatUpAndFade 8s ease-out forwards;
+}
+
+.lantern-body {
+    width: 40px;
+    height: 60px;
+    background: linear-gradient(45deg, #c62828, #e53935);
+    border-radius: 20px 20px 25px 25px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(198, 40, 40, 0.3);
+}
+
+.lantern-top {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 8px;
+    background: #ffd54f;
+    border-radius: 7px 7px 0 0;
+}
+
+.lantern-bottom {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 6px;
+    background: #ffd54f;
+    border-radius: 0 0 5px 5px;
+}
+
+.lantern-tassel {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 25px;
+    background: #ffd54f;
+    animation: sway 3s ease-in-out infinite;
+}
+
+.lantern-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 45px;
+    border: 1px solid rgba(255, 213, 79, 0.3);
+    border-radius: 15px 15px 18px 18px;
+}
+
+@keyframes floatUpAndFade {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(-20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(-50%) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(2deg);
+    }
 }
 
 .menu-categories {
