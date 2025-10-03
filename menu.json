@@ -1169,6 +1169,12 @@
       "allergens": ["barley", "rye"]
     },
     {
+        "category": "extra-sides",
+        "name": "Fortune Cookie",
+        "price": "£0.30",
+        "description": "What fortune is inside?"
+    },
+    {
       "category": "drinks",
       "name": "Coke, Diet Coke or Orange Tango",
       "price": "£1.50",
