@@ -580,6 +580,14 @@
       "allergens": ["prawns", "nuts"]
     },
     {
+        "category": "king-prawn",
+        "name": "Salt & Pepper Prawns",
+        "price": "£8.00",
+        "description": "Contains",
+        "allergens": ["prawns"],
+        "spicy": true
+      },
+    {
       "category": "fried-rice",
       "name": "Singapore Fried Rice",
       "price": "£7.10",
@@ -924,6 +932,7 @@
       "price": "£7.30",
       "description": ""
     },
+
     {
       "category": "specials",
       "name": "Fried Rice, Chips & Curry Sauce",
@@ -941,5 +950,258 @@
       "name": "Fried Rice & Curry Sauce",
       "price": "£5.00",
       "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice & BBQ Sauce",
+      "price": "£5.00",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Chips & Curry Sauce",
+      "price": "£4.20",
+      "description": ""
+    },
+    {
+      "category": "specials",
+      "name": "Chips & BBQ Sauce",
+      "price": "£4.20",
+      "description": ""
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice, Chips, Chicken Balls (4) & Curry Sauce",
+      "price": "£7.10",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice, Chips, Chicken Balls (4) & BBQ Sauce",
+      "price": "£7.10",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice, Chicken Balls (4) & Curry Sauce",
+      "price": "£6.90",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Fried Rice, Chicken Balls (4) & BBQ Sauce",
+      "price": "£6.90",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Chips, Chicken Balls (4) & Curry Sauce",
+      "price": "£6.90",
+      "description": "All in one tray"
+    },
+    {
+      "category": "specials",
+      "name": "Chips, Chicken Balls (4) & BBQ Sauce",
+      "price": "£6.90",
+      "description": "All in one tray"
+    },
+    {
+      "category": "garlic-chilli",
+      "name": "House Special in Garlic & Chilli",
+      "price": "£7.50",
+      "description": "",
+      "spicy": true
+    },
+    {
+      "category": "garlic-chilli",
+      "name": "King Prawn in Garlic & Chilli",
+      "price": "£7.50",
+      "description": "",
+      "allergens": ["prawns"],
+      "spicy": true
+    },
+    {
+      "category": "garlic-chilli",
+      "name": "Chicken in Garlic & Chilli",
+      "price": "£7.50",
+      "description": "",
+      "spicy": true
+    },
+    {
+      "category": "garlic-chilli",
+      "name": "Beef in Garlic & Chilli",
+      "price": "£7.50",
+      "description": "",
+      "spicy": true
+    },
+    {
+      "category": "garlic-chilli",
+      "name": "Roast Pork in Garlic & Chilli",
+      "price": "£7.50",
+      "description": "",
+      "spicy": true
+    },
+    {
+      "category": "garlic-chilli",
+      "name": "Mixed Meat in Garlic & Chilli",
+      "price": "£7.50",
+      "description": "",
+      "spicy": true
+    },
+    {
+      "category": "extra-sides",
+      "name": "Egg Fried Rice",
+      "price": "£3.60",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "extra-sides",
+      "name": "Large Egg Fried Rice",
+      "price": "£4.30",
+      "description": "Contains eggs",
+      "allergens": ["eggs"]
+    },
+    {
+      "category": "extra-sides",
+      "name": "Boiled Rice",
+      "price": "£3.20",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Chips",
+      "price": "£3.30",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Salt & Pepper Chips",
+      "price": "£4.40",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Prawn Crackers",
+      "price": "£2.50",
+      "description": "",
+      "allergens": ["prawns"]
+    },
+    {
+      "category": "extra-sides",
+      "name": "Soft Noodles",
+      "price": "£4.50",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Mushrooms",
+      "price": "£4.50",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Beansprouts",
+      "price": "£3.80",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Vegetables in Black Bean Sauce",
+      "price": "£5.30",
+      "description": "Contains chilli",
+      "spicy": true
+    },
+    {
+      "category": "extra-sides",
+      "name": "Mixed Vegetables",
+      "price": "£5.30",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Sausage",
+      "price": "£2.20",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Pappadom",
+      "price": "£1.10",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Curry Sauce",
+      "price": "£2.30",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Sweet & Sour Sauce",
+      "price": "£2.30",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Soya Gravy",
+      "price": "£2.30",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "BBQ Sauce",
+      "price": "£2.30",
+      "description": ""
+    },
+    {
+      "category": "extra-sides",
+      "name": "Peking Sauce",
+      "price": "£2.80",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "extra-sides",
+      "name": "Capital Sauce",
+      "price": "£2.60",
+      "description": "Contains tomato sauce, malt vinegar, barley, syrup, glucose, fructose syrup, spirit vinegar, white sugar, jujube, modified corn starch, rye flour, spices consist of tamarind",
+      "allergens": ["barley", "rye"]
+    },
+    {
+      "category": "drinks",
+      "name": "Coke or Diet Coke",
+      "price": "£3.20",
+      "description": "Bottle"
+    },
+    {
+      "category": "drinks",
+      "name": "Coke, Diet Coke or Orange Tango",
+      "price": "£1.50",
+      "description": "Can"
+    },
+    {
+        "category": "special-set",
+        "name": "A. For One Person",
+        "price": "£14.30",
+        "description": "Chicken Curry, Sweet & Sour Chicken Balls (5), Egg Fried Rice, Min Vegetable Spring Rolls (5)"
+    },
+    {
+        "category": "special-set",
+        "name": "B. For Two People",
+        "price": "£29.00",
+        "description": "Crispy Chicken in Peking Sauce, Beef with Beansprouts, Sweet & Sour Chicken Balls (9), Egg Fried Rice x 2, Prawn Crackers"
+    },
+    {
+        "category": "special-set",
+        "name": "C. For Three People",
+        "price": "£46.00",
+        "description": "Crispy Chicken in Peking Sauce, Mixed Meat in Satay Sauce, Chicken in Black Bean Sauce, Chicken Curry, Sweet & Sour Chicken Balls (9), Egg Fried Rice x 3, Prawn Crackers"
+    },
+    {
+        "category": "special-set",
+        "name": "D. For Four People",
+        "price": "£63.70",
+        "description": "Crispy Beef in Peking Sauce, King Prawn in Kung Po Sauce, Roast Pork in Black Bean Sauce, Spare Ribs in BBQ Sauce, Chicken Chow Mein, Beef Curry, Sweet & Sour Chicken Balls (9), Chicken & Pork Fried Rice x 3, Prawn Crackers"
     }
   ]
