@@ -9,20 +9,16 @@ async function loadMenu() {
         }
         
         const menuData = await response.json();
-        console.log('Menu data loaded:', menuData);
-        
-        if (!Array.isArray(menuData)) {
-            throw new Error('Menu data is not an array');
-        }
-        
+        console.log('Menu data loaded from file');
         displayMenuItems(menuData);
-        setupCategoryFilters();
         
     } catch (error) {
-        console.error('Error loading menu:', error);
-        document.getElementById('menuItemsContainer').innerHTML = 
-            '<div class="error-message"><p>Sorry, our menu is currently unavailable. Please call us at 01792 974 193 for today\'s offerings.</p><p>Error: ' + error.message + '</p></div>';
+        console.error('Error loading menu from file, using fallback:', error);
+        console.log('Using fallback menu data');
+        displayMenuItems(fallbackMenuData);
     }
+    
+    setupCategoryFilters();
 }
 
 function displayMenuItems(menuData) {
@@ -92,55 +88,127 @@ function setupCategoryFilters() {
     });
 }
 
-// Load menu when page is ready
+// Fireworks functions
+function isWednesday() {
+    const today = new Date();
+    return today.getDay() === 3; // 0 = Sunday, 1 = Monday, ..., 3 = Wednesday
+}
+
+function createFirework(x, y) {
+    const container = document.getElementById('fireworks-container');
+    const firework = document.createElement('div');
+    firework.className = 'firework';
+    firework.style.left = x + 'px';
+    firework.style.top = y + 'px';
+    firework.style.backgroundColor = getRandomColor();
+    
+    container.appendChild(firework);
+    
+    // Explode into particles
+    setTimeout(() => {
+        explodeFirework(firework);
+    }, 500);
+}
+
+function explodeFirework(firework) {
+    const x = parseInt(firework.style.left);
+    const y = parseInt(firework.style.top);
+    const color = firework.style.backgroundColor;
+    
+    // Remove the original firework
+    firework.remove();
+    
+    // Create particles
+    const particleCount = 30;
+    for (let i = 0; i < particleCount; i++) {
+        createParticle(x, y, color);
+    }
+}
+
+function createParticle(x, y, color) {
+    const container = document.getElementById('fireworks-container');
+    const particle = document.createElement('div');
+    particle.className = 'firework-particle';
+    particle.style.left = x + 'px';
+    particle.style.top = y + 'px';
+    particle.style.backgroundColor = color;
+    
+    container.appendChild(particle);
+    
+    // Random direction and distance
+    const angle = Math.random() * Math.PI * 2;
+    const distance = 50 + Math.random() * 100;
+    const duration = 1000 + Math.random() * 1000;
+    
+    // Animate particle
+    particle.animate([
+        {
+            transform: 'translate(0, 0) scale(1)',
+            opacity: 1
+        },
+        {
+            transform: `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) scale(0)`,
+            opacity: 0
+        }
+    ], {
+        duration: duration,
+        easing: 'cubic-bezier(0.1, 0.8, 0.2, 1)'
+    });
+    
+    // Remove particle after animation
+    setTimeout(() => {
+        particle.remove();
+    }, duration);
+}
+
+function getRandomColor() {
+    const colors = [
+        '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF',
+        '#FFA500', '#FF69B4', '#9370DB', '#32CD32', '#FFD700', '#FF6347'
+    ];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function startFireworks() {
+    // Create Wednesday banner
+    const banner = document.createElement('div');
+    banner.className = 'wednesday-banner';
+    banner.textContent = '🎉 Wednesday Special Offers Active! 🎉';
+    document.body.appendChild(banner);
+    
+    // Create initial fireworks
+    for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+            createFirework(
+                Math.random() * window.innerWidth,
+                Math.random() * window.innerHeight
+            );
+        }, i * 300);
+    }
+    
+    // Continue creating fireworks periodically
+    const fireworksInterval = setInterval(() => {
+        createFirework(
+            Math.random() * window.innerWidth,
+            Math.random() * window.innerHeight
+        );
+    }, 1000);
+    
+    // Stop fireworks after 30 seconds
+    setTimeout(() => {
+        clearInterval(fireworksInterval);
+        banner.remove();
+    }, 30000);
+}
+
+// Initialize when page loads
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, initializing menu...');
     loadMenu();
-});
-
-// Fallback menu data if JSON file fails
-const fallbackMenuData = [
-    {
-      "category": "starters",
-      "name": "Chicken & Sweetcorn Soup",
-      "price": "£3.00",
-      "description": "Contains Eggs",
-      "allergens": ["eggs"]
-    },
-    {
-      "category": "starters", 
-      "name": "Spring Roll (1)",
-      "price": "£3.20",
-      "description": ""
-    },
-    {
-      "category": "spare-ribs",
-      "name": "Salt & Pepper Spare Ribs",
-      "price": "£6.70",
-      "description": "Contains starch",
-      "allergens": ["starch"]
+    
+    // Check if it's Wednesday and start fireworks
+    if (isWednesday()) {
+        // Wait a moment for the page to load, then start fireworks
+        setTimeout(startFireworks, 1000);
     }
-  ];
-  
-  // Modify the loadMenu function to use fallback
-  async function loadMenu() {
-      try {
-          console.log('Loading menu...');
-          const response = await fetch('menu.json');
-          
-          if (!response.ok) {
-              throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          
-          const menuData = await response.json();
-          console.log('Menu data loaded from file');
-          displayMenuItems(menuData);
-          
-      } catch (error) {
-          console.error('Error loading menu from file, using fallback:', error);
-          console.log('Using fallback menu data');
-          displayMenuItems(fallbackMenuData);
-      }
-      
-      setupCategoryFilters();
-  }
+});
