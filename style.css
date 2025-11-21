@@ -826,3 +826,187 @@ footer {
     }
 }
 
+/* Christmas Opening Hours Section */
+#christmas-hours {
+    background: linear-gradient(135deg, #c62828 0%, #d32f2f 100%);
+    color: white;
+    padding: 40px 0;
+}
+
+#christmas-hours h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+#christmas-hours h2:after {
+    background-color: #ffd54f;
+}
+
+.christmas-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.christmas-notice {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffd54f;
+}
+
+.christmas-notice p:first-child {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #c62828;
+    font-weight: bold;
+}
+
+.christmas-notice i {
+    color: #c62828;
+    margin-right: 8px;
+}
+
+.christmas-dates {
+    margin: 20px 0;
+}
+
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #c62828;
+}
+
+.date-item.closed {
+    background: #ffebee;
+    border-left-color: #757575;
+}
+
+.date-item .date {
+    font-weight: bold;
+    color: #c62828;
+}
+
+.date-item.closed .date {
+    color: #757575;
+}
+
+.date-item .time {
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.date-item.closed .time {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.christmas-message {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #ffd54f;
+    color: #c62828;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Responsive Design for Christmas Section */
+@media (max-width: 768px) {
+    .christmas-notice {
+        padding: 20px;
+    }
+    
+    .date-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .date-item .time {
+        align-self: flex-end;
+    }
+}
+
+/* Snowflakes Animation */
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Different snowflake sizes */
+.snowflake.small {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.snowflake.medium {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.snowflake.large {
+    font-size: 1.5em;
+    opacity: 1;
+}
+
+/* Snowflake animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) translateX(20px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+}
+
+/* Blur effect for distant snowflakes */
+.snowflake.distant {
+    opacity: 0.4;
+    filter: blur(1px);
+}
+
+.snowflake.very-distant {
+    opacity: 0.2;
+    filter: blur(2px);
+}

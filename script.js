@@ -281,12 +281,105 @@ function createLanternAtPosition(x, y) {
     }
 }
 
+// Snowflakes functionality
+function createSnowflakes() {
+    const container = document.getElementById('snow-container');
+    if (!container) return;
+    
+    const snowflakeCharacters = ['❄', '❅', '❆', '•', '·'];
+    const snowflakeCount = 100; // Number of snowflakes
+    
+    for (let i = 0; i < snowflakeCount; i++) {
+        setTimeout(() => {
+            createSnowflake(container, snowflakeCharacters);
+        }, i * 100); // Stagger creation
+    }
+    
+    console.log('Snowflakes created!');
+}
+
+function createSnowflake(container, characters) {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    
+    // Random snowflake character
+    const character = characters[Math.floor(Math.random() * characters.length)];
+    snowflake.textContent = character;
+    
+    // Random size
+    const sizes = ['small', 'medium', 'large'];
+    const size = sizes[Math.floor(Math.random() * sizes.length)];
+    snowflake.classList.add(size);
+    
+    // Random distance effect
+    const distances = ['', 'distant', 'very-distant'];
+    const distance = distances[Math.floor(Math.random() * distances.length)];
+    if (distance) {
+        snowflake.classList.add(distance);
+    }
+    
+    // Random starting position
+    const startX = Math.random() * 100;
+    snowflake.style.left = startX + 'vw';
+    
+    // Random animation properties
+    const duration = 10 + Math.random() * 20; // 10-30 seconds
+    const delay = Math.random() * 5; // 0-5 second delay
+    const swayAmount = Math.random() * 50 + 20; // 20-70px sway
+    
+    // Apply animations
+    snowflake.style.animation = `
+        fall ${duration}s linear ${delay}s infinite,
+        sway ${duration / 2}s ease-in-out ${delay}s infinite
+    `;
+    
+    // Random z-index for depth
+    snowflake.style.zIndex = Math.floor(Math.random() * 3);
+    
+    container.appendChild(snowflake);
+    
+    // Remove snowflake after animation completes (cleanup)
+    setTimeout(() => {
+        if (snowflake.parentNode) {
+            snowflake.parentNode.removeChild(snowflake);
+        }
+        // Create new snowflake to maintain count
+        createSnowflake(container, characters);
+    }, (duration + delay) * 1000);
+}
+
+// Function to start snowfall
+function startSnowfall() {
+    // Create snow container if it doesn't exist
+    if (!document.getElementById('snow-container')) {
+        const snowContainer = document.createElement('div');
+        snowContainer.id = 'snow-container';
+        document.body.appendChild(snowContainer);
+    }
+    
+    createSnowflakes();
+}
+
+
+// Function to check if it's winter season (November to February)
+function isWinterSeason() {
+    const today = new Date();
+    const month = today.getMonth();
+    return month >= 10 || month <= 1; // November (10) to February (1)
+}
+
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, initialising menu...');
 
     loadMenu();
     setupInteractiveLanterns();
+
+    
+    // Start snowfall during winter season (November to February)
+    if (isWinterSeason()) {
+        startSnowfall();
+    }
     
     // Check if it's Wednesday and start fireworks
     if (isWednesday()) {
