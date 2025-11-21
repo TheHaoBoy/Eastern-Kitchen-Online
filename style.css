@@ -973,32 +973,30 @@ footer {
     opacity: 1;
 }
 
-/* Snowflake animation */
+.snowflake {
+    --x: 0px;
+    --y: 0px;
+    transform: translate(var(--x), var(--y)) rotate(0deg);
+}
+
 @keyframes fall {
     0% {
-        transform: translateY(-10px) translateX(0) rotate(0deg);
+        transform: translateY(-10px) rotate(0deg);
         opacity: 0;
     }
     10% {
         opacity: 1;
     }
-    90% {
-        opacity: 0.8;
-    }
     100% {
-        transform: translateY(100vh) translateX(20px) rotate(360deg);
+        transform: translateY(100vh) rotate(360deg);
         opacity: 0;
     }
 }
 
 @keyframes sway {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(15px);
-    }
+    50% { --x: 15px; }
 }
+
 
 /* Blur effect for distant snowflakes */
 .snowflake.distant {
