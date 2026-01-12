@@ -3,52 +3,61 @@
       "category": "starters",
       "name": "Chicken & Sweetcorn Soup",
       "price": "£3.00",
-      "description": "Contains Eggs",
-      "allergens": ["eggs"]
+      "description": "Diced chicken and sweetcorn in a savoury and sweet soup.",
+      "allergens": ["eggs", "soybean"]
     },
     {
       "category": "starters",
       "name": "Chicken & Noodle Soup",
       "price": "£3.00",
-      "description": ""
+      "description": "Sliced chicken and noodles in a soya stock based soup."
     },
     {
       "category": "starters",
       "name": "Chicken & Mushroom Soup",
       "price": "£3.00",
-      "description": ""
+      "description": "Sliced chicken and mushrooms in a soya stock based soup."
     },
     {
       "category": "starters",
       "name": "Aromatic Crispy Duck with Pancakes",
       "price": "(¼) £11.40 (½) £20.50",
-      "description": "Comes with cucumbers"
+      "description": "Shredded duck with six pancakes which comes with cucumbers and hoisin sauce. Packaged separately and not assembled."
     },
     {
       "category": "starters",
       "name": "Chicken on Skewers with Satay Sauce (4)",
       "price": "£6.90",
-      "description": "Sauce contains peanuts",
+      "description": "Pieces of marinated chicken skewered and with peanut satay sauce poured over.",
       "allergens": ["peanuts"]
     },
     {
       "category": "starters",
-      "name": "Sesame Prawn on Toast",
+      "name": "Pork Dumplings (6)",
+      "price": "£7.00",
+      "description": "Minced pork and chinese leaves stuffed inside dumpling wrappers which are pan-fried.",
+      "allergens": ["wheat", "soybean", "sesame"]
+    },
+    {
+      "category": "starters",
+      "name": "Sesame Prawn on Toast (2)",
       "price": "£6.50",
-      "description": "Contains king prawns",
-      "allergens": ["prawns"]
+      "description": "Two pieces of toast with minced prawns spread over each slice, covered with sesame seeds. Each crispy slice is cut into quarter bites.",
+      "allergens": ["sesame", "prawns"]
     },
     {
       "category": "starters",
       "name": "Mini Vegetable Spring Rolls (10)",
       "price": "£3.50",
-      "description": ""
+      "description": "",
+      "allergens": ["wheat", "soybean", "sesame"]
     },
     {
       "category": "starters",
       "name": "Samosas (10)",
       "price": "£3.50",
-      "description": ""
+      "description": "Small triangle fried pastries with vegetables and curry filling inside.",
+      "allergens": ["wheat", "soybean"]
     },
     {
       "category": "starters",
@@ -60,7 +69,8 @@
       "category": "starters",
       "name": "Spring Roll (1)",
       "price": "£3.20",
-      "description": ""
+      "description": "A large spring roll (a.k.a. pancake roll) stuffed with beansprouts, diced roast pork and chicken.",
+      "allergens": ["eggs"]
     },
     {
       "category": "starters",
